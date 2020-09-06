@@ -34,10 +34,10 @@ nx.add_path(G, [0,7,8,9,0], color="steelblue")
 # ノードの色をセット
 node_color = [node["color"] for node in G.nodes.values()]
 
-# ノードの色をセット
+# エッジの色をセット
 edge_color = [edge["color"] for edge in G.edges.values()]
 
-# グラフを描写
+# グラフを出力
 fig = plt.figure()
 pos = nx.circular_layout(G)
 nx.draw_networkx(G, pos, edge_color=edge_color, node_color=node_color)
